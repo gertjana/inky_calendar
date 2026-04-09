@@ -68,11 +68,11 @@ sudo systemctl enable --now inky-buttons
 
 ### 4. Cron job to update the calendar view
 
-The scripts runs once, if you want uptodate calendar events, you need to run it reguraly
-you can add a cron job to do so, his one will run it every hour, update the path to your situation.
+The scripts runs once, if you want uptodate calendar events, you need to run it regularly
+you can add a cron job to do so, this one will run it every hour, update the path to your situation.
 
 ```
-*/60 * * * * <path_to_scripts>/run_cal.sh
+0 * * * * <path_to_scripts>/run_cal.sh
 ```
 
 
@@ -84,7 +84,7 @@ To see all logging for the scripts:
 journalctl -u inky-buttons -f   # follow live logs
 ```
 
-Restart the s
+Restart the service
 ```
 sudo systemctl restart inky-buttons
 ```
