@@ -10,3 +10,7 @@ API_KEY=<openweathermap-api-key>
 LOCALE=en_GB
 LANG=en
 
+[wifi]
+SSID=<network name>
+PASSWORD=<password>
+

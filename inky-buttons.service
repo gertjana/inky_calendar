@@ -1,0 +1,14 @@
+[Unit]
+Description=Inky Impression button monitor
+After=network.target
+
+[Service]
+Type=simple
+User=gertjan
+WorkingDirectory=%h/frame
+ExecStart=%h/.virtualenvs/pimoroni/bin/python3 -u %h/frame/buttons.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
