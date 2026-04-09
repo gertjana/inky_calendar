@@ -1,4 +1,5 @@
 #!/bin/bash
-cd /home/gertjan/frame
-source /home/gertjan/.virtualenvs/pimoroni/bin/activate
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
+source "${VENV_PATH:-$SCRIPT_DIR/.venv}/bin/activate"
 ./guest_wifi.py
