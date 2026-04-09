@@ -40,7 +40,7 @@ Google OAuth2 credentials (`credentials.json`, `token.json`) are required for ca
 
 ### 1. Create the virtualenv
 
-Pimoroni has a github repository with examples, it also contains an installer that will create a virtualenv with all the display dependencies, this is the easiest way to get the dependencies installed
+Pimoroni has a GitHub repository with examples, it also contains an installer that will create a virtualenv with all the display dependencies, this is the easiest way to get the dependencies installed
 
 ```bash
 git clone https://github.com/pimoroni/inky
