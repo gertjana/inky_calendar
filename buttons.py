@@ -41,6 +41,8 @@ while request.wait_edge_events(0):
 last_button = None
 
 while True:
+    if not request.wait_edge_events(None):
+        continue
     for event in request.read_edge_events():
         index = OFFSETS.index(event.line_offset)
         label = LABELS[index]
