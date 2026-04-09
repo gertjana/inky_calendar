@@ -24,8 +24,8 @@ def generateWifiQR(ssid, password):
 def updateDisplay(ssid, password):
     disp = auto(ask_user=True, verbose=True)
     for _ in range(2):
-        for y in range(disp.height - 1):
-            for x in range(disp.width - 1):
+        for y in range(disp.height):
+            for x in range(disp.width):
                 disp.set_pixel(x, y, CLEAN)
 
     img = Image.new("P", disp.resolution, disp.WHITE)
